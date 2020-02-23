@@ -3,6 +3,7 @@ package com.safa.country.soap.ws.endpoints;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
+import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
 import com.safa.country.soap.ws.countrydetails.CountryDetailsRequest;
@@ -17,12 +18,12 @@ public class CountryEndPoint {
 	@Autowired
 	private CountryService service;
 	
-	@PayloadRoot(namespace = NAMESPACE , localPart = "CountryDetailsRequest")
+	@PayloadRoot(namespace = NAMESPACE , localPart = "countryDetailsRequest")
 	@ResponsePayload
-	public GetCountryResponse getCountry(CountryDetailsRequest request) {
-		
-		
-		return null;
+	public GetCountryResponse getCountry(@RequestPayload CountryDetailsRequest request) {
+		GetCountryResponse response = new GetCountryResponse();
+		response.setCountry(service.findCountry(request.getCountryName()));
+		return response;
 		
 	}
 	
