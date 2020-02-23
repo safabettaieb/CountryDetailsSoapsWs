@@ -2,7 +2,7 @@
 // Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.7 
 // Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
-// Généré le : 2020.02.23 à 05:35:18 PM WAT 
+// Généré le : 2020.02.23 à 06:00:21 PM WAT 
 //
 
 
@@ -23,6 +23,7 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;enumeration value="GBP"/>
  *     &lt;enumeration value="EUR"/>
  *     &lt;enumeration value="PLN"/>
+ *     &lt;enumeration value="TND"/>
  *   &lt;/restriction>
  * &lt;/simpleType>
  * </pre>
@@ -34,7 +35,8 @@ public enum Currency {
 
     GBP,
     EUR,
-    PLN;
+    PLN,
+    TND;
 
     public String value() {
         return name();

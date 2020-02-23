@@ -32,6 +32,7 @@
 			<xsd:enumeration value="GBP" />
 			<xsd:enumeration value="EUR" />
 			<xsd:enumeration value="PLN" />
+			<xsd:enumeration value="TND" />
 		</xsd:restriction>
 	</xsd:simpleType>
 </xsd:schema>
