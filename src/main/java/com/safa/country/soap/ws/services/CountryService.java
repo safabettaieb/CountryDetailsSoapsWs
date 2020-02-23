@@ -25,16 +25,16 @@ public class CountryService {
 		tunisia.setCurrency(Currency.TND);
 
 		Country france = new Country();
-		tunisia.setName("France");
-		tunisia.setCapital("Paris");
-		tunisia.setPopulation(67064000);
-		tunisia.setCurrency(Currency.EUR);
+		france.setName("France");
+		france.setCapital("Paris");
+		france.setPopulation(67064000);
+		france.setCurrency(Currency.EUR);
 
 		Country spain = new Country();
-		tunisia.setName("Spain");
-		tunisia.setCapital("Madrid");
-		tunisia.setPopulation(67064000);
-		tunisia.setCurrency(Currency.EUR);
+		spain.setName("Spain");
+		spain.setCapital("Madrid");
+		spain.setPopulation(67064000);
+		spain.setCurrency(Currency.EUR);
 
 		countries.put(tunisia.getName(), tunisia);
 		countries.put(france.getName(), france);
